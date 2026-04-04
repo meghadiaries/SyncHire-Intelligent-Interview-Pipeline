@@ -9,12 +9,10 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+import { Pool } from '@neondatabase/serverless'; // Use the neon driver you just installed
+
 const pool = new Pool({
-  user: process.env.DB_USER,
-  host: process.env.DB_HOST,
-  database: process.env.DB_NAME,
-  password: process.env.DB_PASSWORD,
-  port: process.env.DB_PORT,
+  connectionString: process.env.POSTGRES_URL, // Vercel provides this automatically
 });
 
 // Test database connection
