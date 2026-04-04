@@ -6,7 +6,9 @@ dotenv.config();
 
 const { Pool } = pkg;
 const app = express();
-app.use(cors());
+app.use(cors({
+  origin: "https://synchire-frontend.vercel.app/" 
+}));
 app.use(express.json());
 
 import { Pool } from '@neondatabase/serverless'; // Use the neon driver you just installed
