@@ -14,7 +14,7 @@ function App() {
   const [selectedPanelName, setSelectedPanelName] = useState('');
 
 
-  const API_BASE_URL = 'http://localhost:5000';
+  const API_BASE_URL = 'https://sync-hire-intelligent-interview-pipeline-meghadiaries-projects.vercel.app/';
 
   const showMessage = (text, type = 'success') => {
     setMessage({ text, type });
