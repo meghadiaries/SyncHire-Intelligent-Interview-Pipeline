@@ -14,7 +14,7 @@ function App() {
   const [selectedPanelName, setSelectedPanelName] = useState('');
 
 
-  const API_BASE_URL = 'https://sync-hire-intelligent-interview-pipeline-meghadiaries-projects.vercel.app/';
+  const API_BASE_URL = 'https://vercel.com/meghadiaries-projects/synchire-backend/39XMHuMBuDTyUaxivuNTud4tTMJV';
 
   const showMessage = (text, type = 'success') => {
     setMessage({ text, type });
