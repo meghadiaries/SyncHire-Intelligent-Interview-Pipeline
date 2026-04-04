@@ -2,19 +2,22 @@ import express from "express";
 import cors from "cors";
 import pkg from "pg";
 import dotenv from 'dotenv';
+
 dotenv.config();
 
 const { Pool } = pkg;
 const app = express();
+
+// CORS - fix the trailing slash
 app.use(cors({
-  origin: "https://synchire-frontend.vercel.app/" 
+  origin: "https://synchire-frontend.vercel.app"  // Removed trailing slash
 }));
 app.use(express.json());
 
-import { Pool } from '@neondatabase/serverless'; // Use the neon driver you just installed
-
+// DATABASE CONNECTION - Use ONLY pg pool, NOT @neondatabase/serverless
 const pool = new Pool({
-  connectionString: process.env.POSTGRES_URL, // Vercel provides this automatically
+  connectionString: process.env.DATABASE_URL,  // Changed from POSTGRES_URL to DATABASE_URL
+  ssl: { rejectUnauthorized: false }  // Required for Neon
 });
 
 // Test database connection
