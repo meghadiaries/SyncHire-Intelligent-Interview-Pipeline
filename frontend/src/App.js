@@ -14,7 +14,7 @@ function App() {
   const [selectedPanelName, setSelectedPanelName] = useState('');
 
 
-  const API_BASE_URL = 'https://sync-hire-intelligent-interview-pip-indol.vercel.app/';
+  const API_BASE_URL = 'https://sync-hire-api.onrender.com';
 
   const showMessage = (text, type = 'success') => {
     setMessage({ text, type });
