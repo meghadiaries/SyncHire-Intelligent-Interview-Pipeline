@@ -5,9 +5,9 @@
     <strong>A high-performance resource management tool designed to clear interview backlogs in record time.</strong>
   </p>
 
-  <video src="https://github.com/user-attachments/assets/5e804940-035d-4d0d-a7b4-cc80c5b5faf2" width="100%" muted autoplay loop playsinline></video>
+  <video src="https://github.com/user-attachments/assets/542bebaa-7c32-4f24-8a6b-63fd1bb7cf2a" width="100%" muted autoplay loop playsinline></video>
 
-  <p align="center">
+  <p align ="center">
     <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
     <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" />
     <img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white" />
